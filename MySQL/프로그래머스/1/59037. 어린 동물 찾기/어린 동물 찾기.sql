@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+SELECT AI.ANIMAL_ID, AI.NAME
+from ANIMAL_INS AI
+where AI.INTAKE_CONDITION != 'Aged'
+order by AI.ANIMAL_ID
