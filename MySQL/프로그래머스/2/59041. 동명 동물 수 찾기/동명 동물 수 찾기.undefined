@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+SELECT AI.NAME, count(AI.NAME) as COUNT
+from ANIMAL_INS AI
+where AI.NAME is not null
+group by AI.NAME
+having count(AI.NAME) > 1
+order by AI.NAME
