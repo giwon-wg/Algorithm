@@ -1,0 +1,5 @@
+-- 코드를 입력하세요
+SELECT FF.FACTORY_ID, FF.FACTORY_NAME, FF.ADDRESS
+from FOOD_FACTORY FF
+where FF.ADDRESS like '%강원도%'
+order by FF.FACTORY_ID
