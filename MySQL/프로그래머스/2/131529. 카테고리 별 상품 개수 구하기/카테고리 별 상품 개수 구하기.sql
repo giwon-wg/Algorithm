@@ -1,0 +1,4 @@
+-- 코드를 입력하세요
+SELECT LEFT(P.PRODUCT_CODE, 2) as CATEGORY, count(P.PRODUCT_ID) as PRODUCTS
+From PRODUCT P
+group by CATEGORY
