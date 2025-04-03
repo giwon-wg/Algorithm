@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT CRCC.CAR_TYPE, count(CRCC.CAR_TYPE) as CARS
+from CAR_RENTAL_COMPANY_CAR CRCC
+where CRCC.OPTIONS LIKE '%열선시트%' OR CRCC.OPTIONS LIKE '%통풍시트%' OR CRCC.OPTIONS LIKE '%가죽시트%'
+group by CRCC.CAR_TYPE
+order by CRCC.CAR_TYPE asc
